@@ -37,74 +37,16 @@ namespace TAZodiak {
 
 	protected:
 
-
-
-
-
-
-
-
-
-
-
 	public: System::Windows::Forms::Label^ lZodiac;
 	public: System::Windows::Forms::TextBox^ txtDeskripsi;
 
 	protected:
 
-
-
-
-
-
-
-
-
-
-
-
-
 	private: System::Windows::Forms::Button^ btnOk;
 
 	private:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 	private:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 	protected:
 

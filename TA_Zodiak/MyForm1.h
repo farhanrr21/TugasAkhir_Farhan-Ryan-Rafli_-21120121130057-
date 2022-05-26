@@ -706,19 +706,20 @@ namespace TAZodiak {
 
 	//Sumber : "https://stackoverflow.com/questions/24491883/visual-c-2010-only-allow-numbers-in-textbox"
 	private: System::Void textboxDay_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
-		// Accept only digits ".", "-" and the Backspace character
+		// Hanya Menerima Digit/Angka
 		if (!Char::IsDigit(e->KeyChar) && e->KeyChar != 0x08) {
 			e->Handled = true;
 		}
 	}
 	private: System::Void textBox2_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
-		// Accept only digits ".", "-" and the Backspace character
+		// Hanya Menerima Digit/Angka
 		if (!Char::IsDigit(e->KeyChar) && e->KeyChar != 0x08) {
 			e->Handled = true;
 		}
 	}
+
 	private: System::Void textBox3_KeyPress(System::Object^ sender, System::Windows::Forms::KeyPressEventArgs^ e) {
-		// Accept only digits ".", "-" and the Backspace character
+		// Hanya Menerima Digit/Angka
 		if (!Char::IsDigit(e->KeyChar) && e->KeyChar != 0x08) {
 			e->Handled = true;
 		}
@@ -741,9 +742,6 @@ namespace TAZodiak {
 			//PENGKONDISIAN
 			if (!(hari > 0 && hari < 32 && bulan <= 12 && bulan > 0 && tahun > 1000 && tahun <= 2022)) {
 				MessageBox::Show("Maaf, Masukkan anda Invalid", "Invalid", MessageBoxButtons::OK, MessageBoxIcon::Error);
-			}
-			if (this->textboxDay->Text == "" || this->textMonth->Text == "" || this->textYear->Text == "") {
-				MessageBox::Show("Harap input terisi lebih dahulu!", "Error", MessageBoxButtons::OK, MessageBoxIcon::Warning);
 			}
 			else {
 				//Zodiak
